@@ -1,0 +1,8 @@
+
+/* Set additional styling options for the columns*/
+.column {
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+}
+
