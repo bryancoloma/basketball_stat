@@ -3,9 +3,15 @@
 .column {
     box-sizing: border-box;
     float: left;
-    width: 50%;
+    /* width: 30%; */
+    /* border: solid black; */
+    /* padding: 0px; */
 }
 
 #p1No, #p1Score {
     text-align: center;
+}
+
+.row {
+    display: table;
 }
