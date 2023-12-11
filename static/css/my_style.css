@@ -3,14 +3,14 @@
 .column {
     box-sizing: border-box;
     float: left;
-    /* width: 30%; */
-    /* border: solid black; */
-    /* padding: 0px; */
+}
+
+h3 {
+    color: blue;
 }
 
 #p1No, #p1Score {
     text-align: center;
-
 }
 
 .row {
