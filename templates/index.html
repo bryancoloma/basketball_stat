@@ -5,319 +5,321 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/my_style.css') }}">
     <title>Team Stat</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="my_style.css">
 </head>
 <body>
     <label for="GameDate">Date:</label>
-    <input type="text" id="GameDate"> <br>
+    <input type="text" name="GameDate"> <br>
 
-<h3>Home Team</h3> 
-<label for="TeamName">Team Name:</label>
-<input type="text"> 
-<label for="TeamCaptain">Team Captain:</label>
-<input type="text">
-<label for="homeScore">Home Score: </label>
-<input type="text" id="homeScore" size="5" maxlength="3">
+    <form action="/formsubmit" method="post">
+        <h3>Home Team</h3> 
+        <label for="TeamName">Team Name:</label>
+        <input type="text"> 
+        <label for="TeamCaptain">Team Captain:</label>
+        <input type="text">
+        <label for="homeScore">Home Score: </label>
+        <input type="text" name="homeScore" size="5" maxlength="3">
 
-    <div class="row">
-        <div class = "column">
-            <div class = "pnumdiv">
-            <h3>No.</h3>
-                <input type="text" id="p1HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p2HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p3HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p4HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p5HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p6HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p7HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p8HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p9HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p10HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p11HomeNo" maxlength="2" size="3"><br>
-                <input type="text" id="p12HomeNo" maxlength="2" size="3">
+            <div class="row">
+                <div class = "column">
+                    <div class = "pnumdiv">
+                    <h3>No.</h3>
+                        <input type="text" name="p1HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p2HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p3HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p4HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p5HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p6HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p7HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p8HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p9HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p10HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p11HomeNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p12HomeNo" maxlength="2" size="3">
+                    </div>
+                </div>
+
+                <div class = "column">
+                    <div class = "pnamediv">
+                        <h3>Name:</h3>
+                        <input type="text" name="p1HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p2HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p3HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p4HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p5HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p6HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p7HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p8HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p9HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p10NHomeame" maxlength="30" size="30"><br>
+                        <input type="text" name="p11HomeName" maxlength="30" size="30"><br>
+                        <input type="text" name="p12HomeName" maxlength="30" size="30"><br>
+                    </div>    
+                </div>
+
+                <div class = "column">
+                    <div class = "pScore">
+                        <h3>Score</h3>
+                        <input type="text" name="p1HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p2HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p3HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p4HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p5HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p6HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p7HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p8HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p9HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p10HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p11HomeScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p12HomeScore" maxlength="3" size="5">
+                    </div>
+                </div>
+
+                <div class = "column">
+                    <div class="pRebound">
+                        <h3>Reb</h3>
+                        <input type="text" name="p1HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p2HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p3HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p4HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p5HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p6HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p7HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p8HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p9HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p10HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p11HomeRebound" max="2" size="4"><br>
+                        <input type="text" name="p12HomeRebound" max="2" size="4">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="pAssist">
+                        <h3>Asst</h3>
+                        <input type="text" name="p1HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p2HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p3HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p4HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p5HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p6HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p7HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p8HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p9HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p10HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p11HomeAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p12HomeAssist" maxlength="2" size="4">
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="pSteal">
+                        <h3>Steal</h3>
+                        <input type="text" name="p1HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p2HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p3HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p4HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p5HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p6HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p7HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p8HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p9HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p10HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p11HomeSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p12HomeSteal" maxlength="2" size="4"> 
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="pBlock">
+                        <h3>Blks</h3>
+                        <input type="text" name="p1HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p2HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p3HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p4HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p5HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p6HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p7HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p8HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p9HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p10HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p11HomeBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p12HomeBlock" maxlength="2" size="4">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="pFoul">
+                        <h3>Foul</h3>
+                        <input type="text" name="p1HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p2HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p3HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p4HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p5HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p6HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p7HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p8HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p9HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p10HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p11HomeFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p12HomeFoul" maxlength="1" size="4">
+                    </div>
+                </div>
+            </div><br>
+
+            <h3> Visitor Team</h3>
+            <label for="TeamName">Team Name:</label>
+            <input type="text"> 
+            <label for="TeamCaptain">Team Captain:</label>
+            <input type="text">
+            <label for="visitorScore">Visitor Score: </label>
+            <input type="text" name="visitorScore" size="5" maxlength="3">
+
+
+            <div class="row">
+                <div class = "column">
+                    <div class = "pnumdiv">
+                    <h3>No.</h3>
+                        <input type="text" name="p1VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p2VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p3VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p4VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p5VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p6VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p7VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p8VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p9VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p10VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p11VisNo" maxlength="2" size="3"><br>
+                        <input type="text" name="p12VisNo" maxlength="2" size="3">
+                    </div>
+                </div>
+
+                <div class = "column">
+                    <div class = "pnamediv">
+                        <h3>Name:</h3>
+                        <input type="text" name="p1VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p2VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p3VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p4VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p5VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p6VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p7VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p8VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p9VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p10VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p11VisName" maxlength="30" size="30"><br>
+                        <input type="text" name="p12VisName" maxlength="30" size="30">
+                    </div>    
+                </div>
+
+                <div class = "column">
+                    <div class = "pScore">
+                        <h3>Score</h3>
+                        <input type="text" name="p1VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p2VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p3VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p4VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p5VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p6VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p7VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p8VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p9VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p10VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p11VisScore" maxlength="3" size="5"><br>
+                        <input type="text" name="p12VisScore" maxlength="3" size="5">
+                    </div>
+                </div>
+
+                <div class = "column">
+                    <div class="pRebound">
+                        <h3>Reb</h3>
+                        <input type="text" name="p1VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p2VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p3VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p4VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p5VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p6VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p7VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p8VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p9VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p10VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p11VisRebound" max="2" size="4"><br>
+                        <input type="text" name="p12VisRebound" max="2" size="4">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="pAssist">
+                        <h3>Asst</h3>
+                        <input type="text" name="p1VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p2VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p3VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p4VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p5VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p6VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p7VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p8VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p9VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p10VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p11VisAssist" maxlength="2" size="4"><br>
+                        <input type="text" name="p12VisAssist" maxlength="2" size="4">
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div class="pSteal">
+                        <h3>Steal</h3>
+                        <input type="text" name="p1VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p2VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p3VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p4VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p5VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p6VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p7VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p8VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p9VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p10VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p11VisSteal" maxlength="2" size="4"> <br>
+                        <input type="text" name="p12VisSteal" maxlength="2" size="4"> 
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="pBlock">
+                        <h3>Blks</h3>
+                        <input type="text" name="p1VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p2VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p3VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p4VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p5VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p6VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p7VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p8VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p9VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p10VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p11VisBlock" maxlength="2" size="4"><br>
+                        <input type="text" name="p12VisBlock" maxlength="2" size="4">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="pFoul">
+                        <h3>Foul</h3>
+                        <input type="text" name="p1VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p2VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p3VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p4VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p5VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p6VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p7VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p8VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p9VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p10VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p11VisFoul" maxlength="1" size="4"><br>
+                        <input type="text" name="p12VisFoul" maxlength="1" size="4">
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class = "column">
-            <div class = "pnamediv">
-                <h3>Name:</h3>
-                <input type="text" id="p1HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p2HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p3HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p4HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p5HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p6HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p7HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p8HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p9HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p10NHomeame" maxlength="30" size="30"><br>
-                <input type="text" id="p11HomeName" maxlength="30" size="30"><br>
-                <input type="text" id="p12HomeName" maxlength="30" size="30"><br>
-            </div>    
-        </div>
-
-        <div class = "column">
-            <div class = "pScore">
-                <h3>Score</h3>
-                <input type="text" id="p1HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p2HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p3HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p4HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p5HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p6HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p7HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p8HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p9HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p10HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p11HomeScore" maxlength="3" size="5"><br>
-                <input type="text" id="p12HomeScore" maxlength="3" size="5">
-            </div>
-        </div>
-
-        <div class = "column">
-            <div class="pRebound">
-                <h3>Reb</h3>
-                <input type="text" id="p1HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p2HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p3HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p4HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p5HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p6HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p7HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p8HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p9HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p10HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p11HomeRebound" max="2" size="4"><br>
-                <input type="text" id="p12HomeRebound" max="2" size="4">
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="pAssist">
-                <h3>Asst</h3>
-                <input type="text" id="p1HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p2HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p3HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p4HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p5HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p6HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p7HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p8HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p9HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p10HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p11HomeAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p12HomeAssist" maxlength="2" size="4">
-            </div>
-        </div>
-        
-        <div class="column">
-            <div class="pSteal">
-                <h3>Steal</h3>
-                <input type="text" id="p1HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p2HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p3HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p4HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p5HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p6HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p7HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p8HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p9HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p10HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p11HomeSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p12HomeSteal" maxlength="2" size="4"> 
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="pBlock">
-                <h3>Blks</h3>
-                <input type="text" id="p1HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p2HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p3HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p4HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p5HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p6HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p7HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p8HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p9HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p10HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p11HomeBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p12HomeBlock" maxlength="2" size="4">
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="pFoul">
-                <h3>Foul</h3>
-                <input type="text" id="p1HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p2HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p3HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p4HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p5HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p6HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p7HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p8HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p9HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p10HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p11HomeFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p12HomeFoul" maxlength="1" size="4">
-            </div>
-        </div>
-    </div><br>
-
-    <h3> Visitor Team</h3>
-    <label for="TeamName">Team Name:</label>
-    <input type="text"> 
-    <label for="TeamCaptain">Team Captain:</label>
-    <input type="text">
-    <label for="visitorScore">Visitor Score: </label>
-    <input type="text" id="visitorScore" size="5" maxlength="3">
-
-
-    <div class="row">
-        <div class = "column">
-            <div class = "pnumdiv">
-            <h3>No.</h3>
-                <input type="text" id="p1VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p2VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p3VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p4VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p5VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p6VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p7VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p8VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p9VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p10VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p11VisNo" maxlength="2" size="3"><br>
-                <input type="text" id="p12VisNo" maxlength="2" size="3">
-            </div>
-        </div>
-
-        <div class = "column">
-            <div class = "pnamediv">
-                <h3>Name:</h3>
-                <input type="text" id="p1VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p2VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p3VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p4VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p5VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p6VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p7VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p8VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p9VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p10VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p11VisName" maxlength="30" size="30"><br>
-                <input type="text" id="p12VisName" maxlength="30" size="30">
-            </div>    
-        </div>
-
-        <div class = "column">
-            <div class = "pScore">
-                <h3>Score</h3>
-                <input type="text" id="p1VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p2VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p3VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p4VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p5VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p6VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p7VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p8VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p9VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p10VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p11VisScore" maxlength="3" size="5"><br>
-                <input type="text" id="p12VisScore" maxlength="3" size="5">
-            </div>
-        </div>
-
-        <div class = "column">
-            <div class="pRebound">
-                <h3>Reb</h3>
-                <input type="text" id="p1VisRebound" max="2" size="4"><br>
-                <input type="text" id="p2VisRebound" max="2" size="4"><br>
-                <input type="text" id="p3VisRebound" max="2" size="4"><br>
-                <input type="text" id="p4VisRebound" max="2" size="4"><br>
-                <input type="text" id="p5VisRebound" max="2" size="4"><br>
-                <input type="text" id="p6VisRebound" max="2" size="4"><br>
-                <input type="text" id="p7VisRebound" max="2" size="4"><br>
-                <input type="text" id="p8VisRebound" max="2" size="4"><br>
-                <input type="text" id="p9VisRebound" max="2" size="4"><br>
-                <input type="text" id="p10VisRebound" max="2" size="4"><br>
-                <input type="text" id="p11VisRebound" max="2" size="4"><br>
-                <input type="text" id="p12VisRebound" max="2" size="4">
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="pAssist">
-                <h3>Asst</h3>
-                <input type="text" id="p1VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p2VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p3VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p4VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p5VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p6VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p7VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p8VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p9VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p10VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p11VisAssist" maxlength="2" size="4"><br>
-                <input type="text" id="p12VisAssist" maxlength="2" size="4">
-            </div>
-        </div>
-        
-        <div class="column">
-            <div class="pSteal">
-                <h3>Steal</h3>
-                <input type="text" id="p1VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p2VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p3VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p4VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p5VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p6VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p7VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p8VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p9VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p10VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p11VisSteal" maxlength="2" size="4"> <br>
-                <input type="text" id="p12VisSteal" maxlength="2" size="4"> 
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="pBlock">
-                <h3>Blks</h3>
-                <input type="text" id="p1VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p2VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p3VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p4VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p5VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p6VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p7VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p8VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p9VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p10VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p11VisBlock" maxlength="2" size="4"><br>
-                <input type="text" id="p12VisBlock" maxlength="2" size="4">
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="pFoul">
-                <h3>Foul</h3>
-                <input type="text" id="p1VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p2VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p3VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p4VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p5VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p6VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p7VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p8VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p9VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p10VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p11VisFoul" maxlength="1" size="4"><br>
-                <input type="text" id="p12VisFoul" maxlength="1" size="4">
-            </div>
-        </div>
-    </div>
+    </form>
 </body>
 </html>
